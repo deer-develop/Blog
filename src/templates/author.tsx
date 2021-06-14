@@ -204,18 +204,7 @@ export const pageQuery = graphql`
   query($author: String) {
     authorYaml(id: { eq: $author }) {
       id
-      website
-      twitter
       bio
-      facebook
-      location
-      profile_image {
-        childImageSharp {
-          fluid(maxWidth: 3720) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       avatar {
         childImageSharp {
           fluid(quality: 100, srcSetBreakpoints: [40, 80, 120]) {

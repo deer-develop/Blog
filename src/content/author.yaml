@@ -1,15 +1,9 @@
 - id: Ghost
-  avatar: avatars/ghost.png
+  avatar: avatars/github.png
   bio: The professional publishing platform
-  twitter: TryGhost
-  facebook: ghost
-  website: https://ghost.org/
-  location: San Francisco
 - id: Another Author
   avatar: avatars/ghost.png
   bio: This is another test author with a profile background image
-  twitter: TryGhost
-  facebook: ghost
-  website: https://ghost.org/
-  location: San Francisco
-  profile_image: img/alex-knight-326705-unsplash.jpg
+- id: 윤종원
+  avatar: avatars/github.png
+  bio: 백엔드 개발자
