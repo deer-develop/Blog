@@ -131,7 +131,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
           }
           html {
             box-sizing: border-box;
-            font-family: sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
 
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
@@ -190,8 +190,9 @@ const IndexLayout: React.FC<IndexProps> = props => {
           kbd,
           pre,
           samp {
-            font-family: monospace, monospace;
+            font-family: JetBrainsMono, monospace, monospace;
             font-size: 1em;
+                color: rgba(59,130,246,1);
           }
           button,
           input,
@@ -277,8 +278,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
           body {
             overflow-x: hidden;
             color: ${lighten('-0.3', colors.midgrey)};
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-              Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
             font-size: 1.6rem;
             line-height: 1.6em;
             font-weight: 400;

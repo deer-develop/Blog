@@ -32,9 +32,9 @@ const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => {
 export const PostFullContent = styled.section`
   position: relative;
   margin: 0 auto;
-  padding: 0 170px 6vw;
+  padding: 0 80px 6vw;
   min-height: 230px;
-  font-family: Georgia, serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 2rem;
   line-height: 1.6em;
   background: #fff;
@@ -102,16 +102,18 @@ export const PostFullContent = styled.section`
     color: ${colors.darkgrey};
     word-break: break-word;
     /* box-shadow: var(--darkgrey) 0 -1px 0 inset; */
-    box-shadow: ${colors.darkgrey} 0 -1px 0 inset;
+    box-shadow: #FFD700 0 -2px 0 inset;
+    padding-bottom: 2px;
     transition: all 0.2s ease-in-out;
   }
 
   a:hover {
     /* color: var(--blue); */
-    color: ${colors.blue};
+    // color: ${colors.blue};
+    color: #FFD700;
     text-decoration: none;
     /* box-shadow: var(--blue) 0 -1px 0 inset; */
-    box-shadow: ${colors.blue} 0 -1px 0 inset;
+    box-shadow: #FFD700 0 -1px 0 inset;
   }
 
   strong,
@@ -179,7 +181,7 @@ export const PostFullContent = styled.section`
   }
 
   code {
-    padding: 0 5px 2px;
+    // padding: 0 5px 2px;
     font-size: 0.8em;
     line-height: 1em;
     font-weight: 400 !important;
@@ -259,8 +261,7 @@ export const PostFullContent = styled.section`
   h6 {
     /* color: color(var(--darkgrey) l(-5%)); */
     color: ${lighten('-0.05', colors.darkgrey)};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   }
 
   h1 {
@@ -339,7 +340,7 @@ export const PostFullContent = styled.section`
     border: 0;
     /* color: var(--blue); */
     color: ${colors.blue};
-    font-family: Georgia, serif;
+  font-family: 'Noto Sans KR', sans-serif;
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
@@ -380,8 +381,7 @@ export const PostFullContent = styled.section`
     width: auto;
     border-spacing: 0;
     border-collapse: collapse;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.6rem;
     white-space: nowrap;
     vertical-align: top;
@@ -525,7 +525,7 @@ export const PostFullContent = styled.section`
   pre[class*='language-'] {
     color: white;
     background: none;
-    font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
+    font-family: JetBrainsMono, Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
     font-feature-settings: normal;
     text-align: left;
     white-space: pre;
@@ -576,9 +576,10 @@ export const PostFullContent = styled.section`
   /* Inline code */
   *:not(pre) > code[class*='language-'] {
     border-radius: 0.3em;
-    background: rgb(1, 22, 39);
-    color: white;
-    padding: 0.15em 0.5em;
+    background: none;
+    font-weight: 600 !important;
+    color: rgba(59,130,246,1);
+    // padding: 0.15em 0.5em;
     white-space: normal;
   }
 

@@ -50,7 +50,7 @@ const navCss = css`
   }
 
   a {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+  font-family: 'Noto Sans KR', sans-serif;
     background: #fff;
     color: black;
     float: left;

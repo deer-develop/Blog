@@ -290,7 +290,7 @@ export const NoImage = css`
 export const PostFullHeader = styled.header`
   position: relative;
   margin: 0 auto;
-  padding: 70px 170px 50px;
+  padding: 70px 80px 50px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 
@@ -323,7 +323,7 @@ const PostFullTags = styled.section`
 const PostFullCustomExcerpt = styled.p`
   margin: 20px 0 0;
   color: var(--midgrey);
-  font-family: Georgia, serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 2.3rem;
   line-height: 1.4em;
   font-weight: 300;
